@@ -122,7 +122,8 @@ class HierarchicalDataset(Dataset):
 # ---------- UTIL ----------
 def pub_style():
     plt.rcParams.update({
-        "font.family": "Times New Roman",
+        "font.family": "serif",        # generic serif family (portable)
+        "font.serif": ["Times New Roman", "Liberation Serif", "DejaVu Serif"],
         "font.size": 12,
         "axes.labelsize": 12,
         "axes.titlesize": 12,
